@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Cliente | Polvos 206</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__logo-nombre">
+            <img src="img/logo.jpg" alt="Logo Polvos 206" class="logo" id="logo-polvos206">
+            <h1 class="titulo-principal" id="titulo-principal">Polvos 206</h1>
+        </div>
+        <nav class="nav-principal" id="nav-principal">
+            <ul class="menu">
+                <li><a href="index.html" class="menu__item" id="inicio-link">Inicio</a></li>
+                <li><a href="quienes-somos.html" class="menu__item" id="quienes-link">Quiénes Somos</a></li>
+                <li><a href="catalogo.html" class="menu__item" id="catalogo-link">Catálogo</a></li>
+                <li><a href="alta-cliente.html" class="menu__item activo" id="alta-cliente-link">Alta Cliente</a></li>
+                <li><a href="alta-venta.html" class="menu__item" id="alta-venta-link">Alta Venta</a></li>
+                <li><a href="contacto.html" class="menu__item" id="contacto-link">Contáctanos</a></li>
+                <li><a href="programador.html" class="menu__item" id="programador-link">Programador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="main-alta-cliente">
+        <section class="alta-cliente" id="alta-cliente">
+            <h2 class="alta-cliente__titulo">Registro de Nuevo Cliente</h2>
+            <form class="alta-cliente__form" id="form-alta-cliente" action="#" method="post">
+                <div class="form__grupo">
+                    <label for="nombre" class="form__label">Nombre Completo:</label>
+                    <input type="text" class="form__input" id="nombre" name="nombre" required>
+                </div>
+                <div class="form__grupo">
+                    <label for="telefono" class="form__label">Teléfono:</label>
+                    <input type="tel" class="form__input" id="telefono" name="telefono" required>
+                </div>
+                <div class="form__grupo">
+                    <label for="correo" class="form__label">Correo electrónico:</label>
+                    <input type="email" class="form__input" id="correo" name="correo" required>
+                </div>
+                <div class="form__grupo">
+                    <label for="direccion" class="form__label">Dirección:</label>
+                    <input type="text" class="form__input" id="direccion" name="direccion" required>
+                </div>
+                <div class="form__grupo">
+                    <label for="tipo-cliente" class="form__label">Tipo de Cliente:</label>
+                    <select id="tipo-cliente" name="tipo-cliente" class="form__select" required>
+                        <option value="">Seleccione</option>
+                        <option value="particular">Particular</option>
+                        <option value="empresa">Empresa</option>
+                        <option value="constructor">Constructor</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form__grupo">
+                    <label for="comentarios" class="form__label">Comentarios adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" class="form__textarea" rows="3"></textarea>
+                </div>
+                <div class="form__grupo form__grupo--botones">
+                    <button type="submit" class="form__boton" id="btn-registrar">Registrar</button>
+                    <button type="reset" class="form__boton form__boton--secundario" id="btn-limpiar">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__info">
+            <h3 class="footer__titulo">Polvos 206</h3>
+            <p class="footer__direccion">Av. República de Colombia y Potam S/N, Fracc. Camino Real, Hermosillo, Sonora, C.P. 83178</p>
+            <p class="footer__tel">Tel: 662-219-56-61 | 662-219-62-88</p>
+            <p class="footer__email">Correo: polvos206@materialessonora.com.mx</p>
+        </div>
+        <div class="footer__copy">
+            <p>&copy; 2025 Polvos 206. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

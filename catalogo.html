@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Polvos 206</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__logo-nombre">
+            <img src="img/logo.jpg" alt="Logo Polvos 206" class="logo" id="logo-polvos206">
+            <h1 class="titulo-principal" id="titulo-principal">Polvos 206</h1>
+        </div>
+        <nav class="nav-principal" id="nav-principal">
+            <ul class="menu">
+                <li><a href="index.html" class="menu__item" id="inicio-link">Inicio</a></li>
+                <li><a href="quienes-somos.html" class="menu__item" id="quienes-link">Quiénes Somos</a></li>
+                <li><a href="catalogo.html" class="menu__item activo" id="catalogo-link">Catálogo</a></li>
+                <li><a href="alta-cliente.html" class="menu__item" id="alta-cliente-link">Alta Cliente</a></li>
+                <li><a href="alta-venta.html" class="menu__item" id="alta-venta-link">Alta Venta</a></li>
+                <li><a href="contacto.html" class="menu__item" id="contacto-link">Contáctanos</a></li>
+                <li><a href="programador.html" class="menu__item" id="programador-link">Programador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="main-catalogo">
+        <!-- Productos en Oferta -->
+        <section class="ofertas" id="ofertas">
+            <h2 class="ofertas__titulo">Productos en Oferta</h2>
+            <div class="ofertas__grid">
+                <article class="producto-oferta" id="oferta1">
+                    <img src="img/adhesivo.jpg" alt="Adhesivo Ultraset Crest" class="producto-oferta__img">
+                    <h3 class="producto-oferta__titulo">Adhesivo Ultraset Gris CREST 20kg</h3>
+                    <p class="producto-oferta__desc">¡Aprovecha el descuento especial por tiempo limitado!</p>
+                    <span class="producto-oferta__precio">Antes: $350 | Ahora: $299</span>
+                </article>
+                <article class="producto-oferta" id="oferta2">
+                    <img src="img/cemento.jpg" alt="Cemento Gris Holcim" class="producto-oferta__img">
+                    <h3 class="producto-oferta__titulo">Cemento Gris Holcim APASCO 25kg</h3>
+                    <p class="producto-oferta__desc">Producto estrella para todas tus necesidades de construcción.</p>
+                    <span class="producto-oferta__precio">Antes: $250 | Ahora: $220</span>
+                </article>
+                <!-- Puedes agregar más productos en oferta aquí -->
+            </div>
+        </section>
+
+        <!-- Productos destacados -->
+        <section class="destacados" id="productos-destacados">
+            <h2 class="destacados__titulo">Productos Destacados</h2>
+            <div class="destacados__grid">
+                <article class="producto-card" id="destacado1">
+                    <img src="img/boquicrest.jpg" alt="BoquiCrest Ultramax" class="producto-card__img">
+                    <h3 class="producto-card__titulo">BoquiCrest Ultramax 10kg (varios colores)</h3>
+                    <p class="producto-card__desc">Ideal para acabados perfectos en pisos y muros. Consulta colores disponibles.</p>
+                </article>
+                <article class="producto-card" id="destacado2">
+                    <img src="img/panelw.jpg" alt="Panel W" class="producto-card__img">
+                    <h3 class="producto-card__titulo">Panel W 2", 3" y 4"</h3>
+                    <p class="producto-card__desc">Solución ligera, resistente y versátil para muros y techos.</p>
+                </article>
+                <article class="producto-card" id="destacado3">
+                    <img src="img/estuco.jpg" alt="MorterMax Estuco" class="producto-card__img">
+                    <h3 class="producto-card__titulo">MorterMax Estuco Manual Fino 25kg</h3>
+                    <p class="producto-card__desc">Acabado profesional y fácil de aplicar.</p>
+                </article>
+                <!-- Agrega más productos destacados según lo necesites -->
+            </div>
+        </section>
+
+        <!-- PDF del catálogo completo -->
+        <section class="catalogo-pdf" id="catalogo-pdf">
+            <h2 class="catalogo-pdf__titulo">Catálogo Completo de Productos</h2>
+            <p class="catalogo-pdf__texto">
+            Consulta el catálogo completo de productos directamente aquí:
+            </p>
+            <div class="catalogo-pdf__visor" style="width:100%;max-width:900px;margin:auto;height:600px;">
+                <iframe src="pdf/catalogomrs.pdf#toolbar=1&navpanes=0&scrollbar=1" width="100%" height="100%" style="border:none;min-height:600px;" allowfullscreen>
+                </iframe>
+            </div>
+            <p class="catalogo-pdf__descarga">
+                <a href="pdf/catalogomrs.pdf" target="_blank">
+                    Descargar catálogo en PDF
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__info">
+            <h3 class="footer__titulo">Polvos 206</h3>
+            <p class="footer__direccion">Av. República de Colombia y Potam S/N, Fracc. Camino Real, Hermosillo, Sonora, C.P. 83178</p>
+            <p class="footer__tel">Tel: 662-219-56-61 | 662-219-62-88</p>
+            <p class="footer__email">Correo: polvos206@materialessonora.com.mx</p>
+        </div>
+        <div class="footer__copy">
+            <p>&copy; 2025 Polvos 206. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
