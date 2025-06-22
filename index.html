@@ -8,39 +8,70 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="header__logo-nombre">
-            <img src="img/logo.jpg" alt="Logo Polvos 206" class="logo" id="logo-polvos206">
-            <h1 class="titulo-principal" id="titulo-principal">Polvos 206</h1>
-        </div>
+        <div class="header_flex">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <img src="css/img/header.png" alt="Logo Polvos 206" class="header_logo" id="logo-polvos206">
+            <button class="header_cart" onclick="openCart()" >🛒</button>
+    </div>
     </header>
 
-    <section class="side-nav">
-        <nav class="nav-principal" id="nav-principal">
-            <ul class="menu">
-                <li><a href="index.html" class="menu__item activo" id="inicio-link">Inicio</a></li>
-                <li><a href="quienes-somos.html" class="menu__item" id="quienes-link">Quiénes Somos</a></li>
-                <li><a href="catalogo.html" class="menu__item" id="catalogo-link">Catálogo</a></li>
-                <li><a href="alta-cliente.html" class="menu__item" id="alta-cliente-link">Alta Cliente</a></li>
-                <li><a href="alta-venta.html" class="menu__item" id="alta-venta-link">Alta Venta</a></li>
-                <li><a href="contacto.html" class="menu__item" id="contacto-link">Contáctanos</a></li>
-                <li><a href="programador.html" class="menu__item" id="programador-link">Programador</a></li>
-            </ul>
-        </nav>
+    <section class="side-nav" id="sidenav">
+        <nav>
+            <span class="closebtn" onclick="closeNav()">☰</span>
+                <a href="index.html">Inicio</a>
+                <a href="quienes-somos.html">Quiénes Somos</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="alta-cliente.html">Alta Cliente</a>
+                <a href="alta-venta.html">Alta Venta</a>
+                <a href="contacto.html">Contáctanos</a>
+                <a href="programador.html">Programador</a>
+            </nav>
     </section>
 
     <main class="main" id="main-inicio">
-        <section class="bienvenida" id="bienvenida">
-            <h2 class="bienvenida__titulo">¡Bienvenido a Polvos 206!</h2>
-            <p class="bienvenida__texto">
-                <strong>Polvos 206</strong> es tu aliado en materiales para la construcción y remodelación en Hermosillo y la región. Somos especialistas en la distribución de polvos, adhesivos, cementos, yesos, estucos y materiales afines, trabajando bajo la experiencia y calidad de Materiales Reyes de Sonora (MRS), parte del grupo líder <strong>Grupo Delza</strong>.
-            </p>
-            <p class="bienvenida__texto">
-                Ofrecemos productos de marcas reconocidas y atención personalizada para satisfacer las necesidades de constructoras, albañiles, arquitectos y público en general. ¡Descubre nuestro catálogo y comprueba por qué somos tu mejor opción!
-            </p>
-            <div class="banner-promocion" id="banner-promocion">
-                <strong>¡Oferta del mes! Descuento especial en todos los adhesivos CEMIX y CREST.</strong>
-            </div>
-        </section>
+        <div class="main_row">
+<section class="bienvenida">
+    <h2 class="bienvenida_titulo">¡Bienvenido a Polvos y Soluciones 206!</h2>
+    <p class="bienvenida_texto">
+        En <strong>Polvos y Soluciones 206</strong> nos enorgullece ser un punto de referencia en la distribución de materiales para la construcción y remodelación en Hermosillo y sus alrededores. Nos especializamos en productos esenciales como polvos, cementos, adhesivos, yesos, estucos, y una amplia variedad de soluciones que responden a las exigencias del sector de la construcción moderno.
+    </p>
+    <p class="bienvenida_texto">
+        Nuestra misión es ofrecer materiales de alta calidad respaldados por un servicio personalizado, confiable y eficiente. Sabemos lo importante que es contar con insumos duraderos y de confianza, por eso trabajamos con proveedores seleccionados cuidadosamente, que cumplen con los más altos estándares de calidad.
+    </p>
+    <p class="bienvenida_texto">
+        Atendemos desde grandes desarrollos hasta proyectos domésticos, brindando soporte a constructoras, albañiles, arquitectos, ingenieros y clientes particulares. Nuestro equipo está preparado para asesorarte en cada paso, ayudándote a elegir los productos adecuados según tus necesidades específicas, presupuesto y tipo de obra.
+    </p>
+    <p class="bienvenida_texto">
+        En <strong>Polvos y Soluciones 206</strong> creemos que cada construcción comienza con una base sólida y el mejor servicio. Por eso, más que materiales, ofrecemos soluciones confiables que contribuyen al éxito de cada proyecto. Explora nuestro catálogo y permite que seamos parte de tus ideas.
+    </p>
+</section>
+
+            <aside class="ofertas">
+                <p class="title_ofertas"> <strong>¡Ofertas del mes!</strong> </p>
+                <ul>
+                <li>
+                🧱 2x1 en adhesivos seleccionados <br>
+                    ¡Compra un adhesivo CEMIX o CREST y llévate el segundo a mitad de precio!
+                </li>
+                <li>
+                🏷️ Descuento del 15% en tu primera compra <br>
+                    Regístrate como cliente nuevo y obtén un 15% de descuento en tu primer ticket.
+                </li>
+                <li>
+                🏗️ Combo constructor <br>
+                Llévate un paquete de cemento, yeso y estuco con un precio especial.
+                </li>
+                <li>
+                🚚 Envío gratis en compras mayores a $1,500 pesos <br>
+                Aprovecha y recibe tus materiales en la puerta de tu obra sin costo adicional.
+                </li>
+                <li>
+                🎁 Regalo sorpresa por cada compra mayor a $2,000 pesos <br>
+                Recibe un regalo útil para tu obra, como cubetas, guantes o herramientas.
+                </li>
+                </ul>
+            </aside>
+        </div>
 
         <section class="destacados" id="productos-destacados">
             <h2 class="destacados__titulo">Productos destacados</h2>
@@ -60,7 +91,6 @@
                     <h3 class="producto-card__titulo">BoquiCrest Ultramax 10kg (varios colores)</h3>
                     <p class="producto-card__desc">Relleno para juntas, resistencia y variedad de tonos para tus acabados.</p>
                 </article>
-                <!-- Puedes agregar más productos destacados aquí -->
             </div>
         </section>
     </main>
@@ -77,5 +107,15 @@
             <p>&copy; 2025 Polvos 206. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "260px";
+        }
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0px";
+        }
+    </script>
+
 </body>
 </html>
